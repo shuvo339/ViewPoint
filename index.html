@@ -45,8 +45,8 @@
                     </div>
                   </div>
 
-                  <div class="bg-white p-12 rounded-3xl space-y-4 text-xl text-[#12132DCC] font-medium">
-                    <div class="flex justify-between gap-6">
+                  <div class="bg-white p-8 lg:p-12 rounded-3xl space-y-4 text-xl text-[#12132DCC] font-medium">
+                    <div class="flex justify-between gap-4 lg:gap-8">
                         <h3>Registered Users</h3>
                         <h5>01</h5>
                     </div>
@@ -68,8 +68,72 @@
         </section>
     </header>
 
-    <main class="container px-8 mx-auto">
+    <main class="container px-8 mx-auto my-20">
+        <!-- let's discuss section  -->
+        <section>
+            <h1 class="text-3xl lg:text-4xl font-bold text-center mb-5 font-mulish">Let's Discuss</h1>
+            <p class="text-center opacity-80 mb-10 max-w-[500px] mx-auto font-inter">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined</p>
 
+            <!-- discuss card -->
+            <!-- dynamic  -->
+            <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                <!-- post card container -->
+                <div class="col-span-4 flex gap-2 lg:gap-8 bg-gray-200 p-10 rounded-2xl">
+                    <div class="relative w-28">
+                        <img class="rounded-xl" src="./images/pro-pic.jpg" alt="">
+                        <div class="bg-green-700 size-4 rounded-full absolute -top-1 -right-1"></div>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-inter opacity-90"><span class="mr-6">#Music</span> <span>Author: Arvind Chawla</span></h4>
+                        <h1 class="text-xl font-semibold font-mulish">10 Kids Unaware of Their Halloween Costume</h1>
+                        <p class="opacity-80 max-w-[600px] pb-4">It's one thing to subject yourself to ha Halloween costume mishap because, hey that's your prerogative</p>
+                        <hr class=" border-gray-400 border-dashed">
+
+                        <!-- social response  -->
+                       <div class="flex justify-between items-center pt-4 font-mulish">
+                        <div class="flex gap-4 lg:gap-8">
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-regular fa-message"></i>
+                                <h5>560</h5>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-regular fa-eye"></i>
+                                <h5>560</h5>
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-regular fa-clock"></i>
+                                <h5>560</h5>
+                            </div>
+                        </div>
+                        <div class="size-8 bg-[#10B981] rounded-full flex items-center justify-center">
+                            <i class="fa-regular fa-envelope-open"></i>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <!-- mark read container  -->
+                <div class="col-span-2 bg-gray-200 rounded-2xl p-4 font-mulish">
+                    <div class="flex justify-between">
+                        <h3 class="font-bold text-xl">Title</h3>
+                        <div class="flex items-center gap-3 opacity-80">
+                            <i class="fa-solid fa-check-double text-green-500"></i>
+                            <h6>Mark as read (<span>2</span>)</h6>
+                        </div>
+                    </div>
+                    <!-- dynamic -->
+                    <div class="flex justify-between bg-white p-4 my-2 rounded-xl">
+                        <h3 class="font-bold text-md">10 Kids Unaware of Their Halloween Costume</h3>
+                        <div class="flex items-center gap-3 opacity-80">
+                                <i class="fa-regular fa-eye"></i>
+                                <h5>560</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- join forun banner  -->
     </main>
 
     <footer>
