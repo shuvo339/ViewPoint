@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,9 @@
 </head>
 <body>
     <header class="container px-8 mx-auto">
+        <!-- navbar  -->
         <nav class="py-6 flex justify-between">
-            <h1 class="text-2xl lg:text-4xl font-bold">ViewPoint</h1>
+            <h1 class="text-2xl lg:text-4xl font-bold font-mulish">ViewPoint</h1>
 
             <div class="flex items-center gap-1 lg:gap-4">
                 <div class="lg:flex items-center gap-1 lg:gap-3 hidden">
@@ -24,9 +25,47 @@
                     <div title="Add" class="w-12 text-center border-2 border-gray-200 bg-slate-100  rounded-full p-2"><i class="fa-solid fa-user-plus"></i></div>
                     <div title="Flag" class="w-12 text-center border-2 border-gray-200 bg-slate-100  rounded-full p-2"><i class="fa-regular fa-flag"></i></div>
                 </div>
-                <button class="btn bg-[#797DFC] rounded-full text-white px-6">Sign In</button>
+                <button class="btn bg-[#797DFC] rounded-full text-white font-mulish px-6">Sign In</button>
             </div>
         </nav>
+
+        <!-- banner section -->
+        <section>
+            <div class="hero bg-[url('./images/bgbanner.png')] bg-[#12132D] font-mulish p-4 lg:p-24 rounded-3xl">
+                <div class="hero-content flex-col lg:flex-row gap-10 lg:gap-56">
+
+                  <div class="text-center lg:text-start">
+                    <h1 class="text-3xl lg:text-5xl font-bold text-white lg:leading-snug">Welcome to the<br><span class="text-[#797DFC]">ViewPoint</span> Forum</h1>
+                    <p class="py-4 text-white opacity-80">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+                    <div class="mt-6">
+                        <label class="input rounded-full flex items-center justify-between gap-2 py-7">
+                            <input type="text" placeholder="Search here" />
+                            <span class="btn bg-[#797DFC] rounded-full text-white px-6">Search</span>
+                        </label>
+                    </div>
+                  </div>
+
+                  <div class="bg-white p-12 rounded-3xl space-y-4 text-xl text-[#12132DCC] font-medium">
+                    <div class="flex justify-between gap-6">
+                        <h3>Registered Users</h3>
+                        <h5>01</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3>Forum</h3>
+                        <h5>01</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3>Topics</h3>
+                        <h5>01</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3>Replies</h3>
+                        <h5>01</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 
     <main class="container px-8 mx-auto">
