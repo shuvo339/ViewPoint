@@ -1,5 +1,7 @@
 const loadAllPost=async(searchText='')=>{
-    document.getElementById('allpost-spinner').classList.remove('hidden');
+    setTimeout(()=>{
+        document.getElementById('allpost-spinner').classList.add('hidden');
+    },2000)
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${searchText}`)
     const data = await res.json()
     const posts = data.posts;
@@ -63,13 +65,16 @@ const loadAllPost=async(searchText='')=>{
                     </div>
         `
         allPostContainer.appendChild(allPostDiv);
-        document.getElementById('allpost-spinner').classList.add('hidden');
     });
 }
 
 const handleSearch =()=>{
     const inputText = document.getElementById('input-field').value;
     loadAllPost(inputText);
+    document.getElementById('allpost-spinner').classList.remove('hidden');
+    setTimeout(()=>{
+        document.getElementById('allpost-spinner').classList.add('hidden');
+    },2000)
 }
 
 let readCount = parseInt(document.getElementById('read-count').innerText);
